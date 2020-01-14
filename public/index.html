@@ -1,24 +1,80 @@
 <!DOCTYPE html>
 <html>
+  <style>
+
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin : auto;
+      width: 50%;
+    }
+
+    
+    input, select
+    {
+       width:50%;
+       padding: 12px 14px;
+       margin: auto;
+       display: inline-block;
+       border: 1px solid rgb(255, 255, 255);
+       border-radius: 4px;
+       box-sizing: border-box;
+       background-color:Tomato;
+    }
+
+    button {
+      margin :auto;
+      display: block;
+  
+    }
+
+    h1{
+       text-align: center;
+       background-color:rgb(236, 87, 61);
+    }
+
+    body {
+      background-image:url('car.png');
+    }
+  </style>
+
+  <body>
   <head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>CSS/HTML Workshop with govirtuo.com</title>
   </head>
   <body>
+
+    <h1 >Virtuo</h1>
+
     <div id="car">
       <input class="js-name" type="text" placeholder="Car name"/>
       <input class="js-price-by-day" type="number" placeholder="Price by day"/>
       <input class="js-price-by-km" type="number" placeholder="Price by km"/>
     </div>
-    <div id="rental">
+    <div id="rental" >
       <input class="js-name" type="text" placeholder="Driver name"/>
       <input class="js-begin" type="date" placeholder="Rental begin date"/>
       <input class="js-end" type="date" placeholder="Rental end date"/>
       <input class="js-distance" type="number" placeholder="Distance in km"/>
       <input class="js-option" type="checkbox" placeholder="Deductible option"/>
     </div>
-    <button id="compute">Compute</button>
+    <button  class="btn btn-danger" id="compute">Compute</button>
+
     <div id="actors"></div>
     <script src="virtuo.js"></script>
     <script src="index.js"></script>
+
+
+    
+
+
   </body>
 </html>
