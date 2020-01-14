@@ -34,6 +34,11 @@
        background-color:rgb(236, 87, 61);
     }
 
+    h2{
+       text-align: center;
+       font-size : 4pt;
+    }
+
     body {
       background-image:url("car.jpg");
     }
@@ -53,7 +58,7 @@
   <body>
 
 
-    <h1 >Virtuo</h1>
+    <h1 >Dress Up Virtuo</h1>
 
     <div id="car">
       <input class="js-name" type="text" placeholder="Car name"/>
@@ -65,9 +70,10 @@
       <input class="js-begin" type="date" placeholder="Rental begin date"/>
       <input class="js-end" type="date" placeholder="Rental end date"/>
       <input class="js-distance" type="number" placeholder="Distance in km"/>
+      <h2 >Deductible option </h2>
       <input class="js-option" type="checkbox" placeholder="Deductible option"/>
     </div>
-    <button  class="btn btn-danger" id="compute">Compute</button>
+    <button  style="margin:auto" class="btn btn-danger" id="compute">Compute</button>
 
     <div id="actors"></div>
     <script src="virtuo.js"></script>
